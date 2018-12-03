@@ -1,5 +1,5 @@
 let shaders;
-let cam;
+let camera;
 
 function preload() {
     shaders = loadShader('assets/shader.vert', 'assets/shader.frag');
@@ -9,15 +9,15 @@ function setup() {
     createCanvas(windowWidth, windowHeight, WEBGL);
     noStroke();
 
-    cam = createCapture(VIDEO);
-    cam.size(windowWidth, windowHeight);
-    cam.hide();
+    camera = createCapture(VIDEO);
+    camera.size(windowWidth, windowHeight);
+    camera.hide();
 }
 
 function draw() {
     shader(shaders);
-    shaders.setUniform('resolution', [width, height])
-    shaders.setUniform('tex0', cam);
+    shaders.setUniform('uResolution', [width, height])
+    shaders.setUniform('uTexture', camera);
     rect(0, 0, width, height);
 }
 
