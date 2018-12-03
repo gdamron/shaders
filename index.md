@@ -1,3 +1,1 @@
-## Shaders
-
-#### [gameboy](gameboy/index.html)
+### [gameboy](gameboy/index.html)
