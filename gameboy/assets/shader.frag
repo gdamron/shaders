@@ -16,8 +16,8 @@ vec4 light = vec4(0.5469, 0.6758, 0.625, 1.0);
 vec4 lighter = vec4(0.6, 0.738, 0.0625, 1.0);
 
 // color intensity thresholds found through experiementation
-float lighter_thresh = 0.625;
-float light_thresh = 0.5;
+float lighter_thresh = 0.825;
+float light_thresh = 0.56;
 float dark_thresh = 0.375;
 
 // helper constants
